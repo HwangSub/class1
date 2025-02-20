@@ -2,39 +2,33 @@ package calendar;
 
 import java.util.Calendar;
 
-public class Test1 {
+public class CalTest1 {
 
 	public static void main(String[] args) {
+
+		Calendar cal = Calendar.getInstance(); // 인스턴스(화)처리
 		
-		Calendar cal = Calendar.getInstance(); // 날짜 클래스의 인스턴스 처리
+		String date1 = "2025-12-25";
+		String[] date2 = date1.split("-");
+		//String[] date2 = {"2025","12","25"};
+	
+		String year  = date2[0];
+		String month = date2[1];
+		String day   = date2[2];
 		
-		// 100일 후 
-		cal.add( Calendar.DATE, 100 );
-		
-		// 3년 후
-		// cal.add( Calendar.YEAR, 3 );
-		
-		// 18개월 후
-		// cal.add( Calendar.MONTH, 18 );
+		int year1  = Integer.parseInt(year); // 형변환(String -> Integer)
+		int month1 = Integer.parseInt(month);
+		int day1   = Integer.parseInt(day);
+
+		// 시점을 2025년 12월 25일로 세팅함
+		cal.set(year1,(month1-1),day1); // month : 0 ~ 11
 
 		int yy = cal.get(Calendar.YEAR);
 		int mm = cal.get(Calendar.MONTH); //  0 ~ 11
 		int dd = cal.get(Calendar.DATE);
-		
-		int hh = cal.get(Calendar.HOUR_OF_DAY);
-		int mi = cal.get(Calendar.MINUTE);
-		int ss = cal.get(Calendar.SECOND);
-		
-		System.out.println( yy+"년 "+ (mm+1) +"월 "+dd + "일" );
-		
 
-		System.out.println( hh+":"+ mi +":"+ss );
-		
-		// 오전/오후 (am/pm) -> 0:오전, 1:오후
-		int ampm = cal.get(Calendar.AM_PM);
-		if( ampm == 0 ) System.out.println("오전");
-		else  System.out.println("오후");
-		
+		System.out.println( yy+"년 "+ (mm+1) +"월 "+dd + "일" );
+				
 		// 요일 ( 1:일, 2:월, ~ 7:토 )
 		int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 		String str = "";
@@ -61,7 +55,7 @@ public class Test1 {
 		System.out.println("이달의 몇번째 주 : "+ cal.get(Calendar.WEEK_OF_MONTH));
 		System.out.println("이번달의 마지막 날짜 : "+ cal.getActualMaximum(Calendar.DATE));
 		
-	
+		
 	}
 
 }
