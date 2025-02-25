@@ -1,0 +1,10 @@
+- html/css
+java-I  (초,중급) - DB연결이전
+ =>oracle/mysql/maridb -
+java-II (고급) - DB연동
+javascript/jquery
+jsp(html/css/javascript/jquery)
+**servlet(프레임워크형식-old)
+spring(스프링부트,egov프레임워크)프레임워크
+ =>linux-활용,서버(네임,웹,FTP,SSH)-클라우드개념
+리엑트(react.js) - 자바스크립트의 한 종류 
