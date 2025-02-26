@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ 
+ <style>
+ .sec_title {
+	position:relative;
+	left:30px;
+	top:20px;
+	width:840px;
+	text-align:center;
+	font-size:40px;
+	font-weight:bold;
+	color:#555555;
+ }
+ .div_agrees {
+	position:relative;
+	left:30px;
+	top:30px;
+	width:840px;
+	height:750px;
+	border:1px solid #cccccc;
+	padding:10px;
+	font-size:12px;
+	line-height:3.0;
+ }
+ 
+ .button1 {
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	font-weight:bold;
+	color:#ffffff;
+	background-color:#0066ff;
+	border:0px;
+	cursor:pointer; /*help,progress,wait,cell,pointer*/
+ }
+ 
+ .button2 {
+	width:100px;
+	padding:8px;
+	font-size:14px;
+	font-weight:bold;
+	color:#ffffff;
+	background-color:#0066ff;
+	border:0px;
+	cursor:pointer; /*help,progress,wait,cell,pointer*/
+ }
+ 
+ .button3 {
+	width:70px;
+	padding:8px;
+	font-size:12px;
+	font-weight:bold;
+	color:#ffffff;
+	background-color:#0066ff;
+	border:0px;
+	cursor:pointer; /*help,progress,wait,cell,pointer*/
+ }
+ 
+ .table_member {
+	width:100%;
+ }
+ 
+ .table_member td {
+	padding:5px;
+ }
+ 
+ .input1 {
+	width:70%;
+	padding:7px;
+ }
+ .input2 {
+	width:90%;
+	padding:7px;
+ }
+ .input3 {
+	width:150px;
+	padding:7px;
+ }
+ 
+ hr {
+	border:0px;
+	height:1px;
+	background:#e9e9e9;
+ }
+ .select1 {
+ 	width:150px;
+	padding:7px;
+ }
+ 
+ </style>
+ 
+ <body>
+  
+ <header>
+	header영역
+ </header>
+ <nav>
+ 
+	  <ul>
+		<li class="menu_li"><a href="main.html">홈</a></li>
+		<li class="menu_li"><a href="memberAgree.html">회원가입</a></li>
+		<li class="menu_li"><a href="loginWrite.html">로그인</a></li>
+		<li class="menu_li"><a href="boardList.html">게시판</a></li>
+		<li class="menu_li"><a href="history.html">이력서</a></li>
+	  </ul>
+ 
+ </nav>
+ 
+ <aside>
+	aside영역
+ </aside>
+ 
+ <section>
+
+	<div class="sec_title">회원가입</div>
+
+	<div class="div_agrees">
+	
+	<table class="table_member">
+		<tr>
+			<td colspan="2">
+			■ 로그인 정보 입력
+			</td>
+		</tr>
+		<tr>
+			<td>*아이디</td>
+			<td>
+			<input type="text" name="" class="input1">
+			<button type="button" class="button2">중복확인</button>
+			</td>
+		</tr>
+		<tr>
+			<td>*비밀번호</td>
+			<td>
+				<input type="password" name="" class="input2">
+			</td>
+		</tr>
+		<tr>
+			<td>*비밀번호 확인</td>
+			<td>
+				<input type="password" name="" class="input2">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<hr>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			■ 회원 정보 입력
+			</td>
+		</tr>
+		<tr>
+			<td>*이름(회사명)</td>
+			<td>
+				<input type="text" name="" class="input2">
+			</td>
+		</tr>
+		<tr>
+			<td>*연락처</td>
+			<td>
+				<input type="text" name="" class="input3"> &nbsp;-&nbsp;
+				<input type="text" name="" class="input3"> &nbsp;-&nbsp;  
+				<input type="text" name="" class="input3">
+			</td>
+		</tr>
+		<tr>
+			<td>*이메일</td>
+			<td>
+				<input type="text" name="" class="input3"> @
+				<input type="text" name="" class="input3"> &nbsp;&nbsp;&nbsp;&nbsp;
+				<select name="" class="select1">
+					<option value="">직접입력</option>
+					<option value="">naver.com</option>
+					<option value="">google.com</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<hr>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			■ 정보 수신 동의
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			내용은 수신동의 여부와 관계없이 발송됩니다.
+			<input type="checkbox" name=""> 이메일
+			&nbsp;&nbsp;
+			<input type="checkbox" name=""> 문자
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<hr>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<div style="width:100%;padding:5px;background:yellow;"> 
+			<input type="text" name="" class="input1">
+			<img src="pic1.PNG" style="margin-bottom:-13px;">
+			<button type="button" class="button3">새로고침</button>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+			<br>
+			<button type="submit" class="button1">저장하기</button>
+			</td>
+		</tr>
+
+	</table>
+	
+	</div>
+
+ </section>
+ 
+ <footer>
+	footer영역
+ </footer>
+  
+ </body>
+</html>
