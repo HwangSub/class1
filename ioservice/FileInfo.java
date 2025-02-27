@@ -9,7 +9,7 @@ public class FileInfo {
 		String filepath = "c:/mytemp/test1.txt";
 		
 		File file = new File(filepath);
-		
+	
 		System.out.println( file.getName());      // test1.txt - 파일명
 		System.out.println( file.length() );      // 10 - 크기(바이트) 
 		System.out.println( file.exists() );      // true - 존재여부

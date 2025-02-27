@@ -6,8 +6,9 @@ import java.util.Scanner;
 
 public class StudentAdmin1 {
 
+	// 맴버변수, 클래스(전역)변수
 	public static String filePath = "C:\\mytemp\\student_info.txt";
-	
+
 	public static void main(String[] args) {
 
 		Scanner scn = new Scanner(System.in);
@@ -18,9 +19,9 @@ public class StudentAdmin1 {
 		
 		int menu = 0;
 		try { 
-			menu = scn.nextInt();
+			menu = scn.nextInt(); 
 		} catch (Exception e) {
-			System.out.println("** 숫자를 입력하세요. ");
+			System.out.println("** 숫자를 입력하세요. ** ");
 			return;
 		}
 		switch(menu) {
@@ -36,22 +37,36 @@ public class StudentAdmin1 {
 		try {
 			FileReader file = new FileReader(filePath);
 			BufferedReader buffer = new BufferedReader(file);
+			
 			int rowNumber = 0;
-			while(true) {
-				String str = buffer.readLine();
+			while(true) { // 무한루프
+				String str = buffer.readLine(); // 한줄
 				if(str == null) break;
-				
 				rowNumber++;
 				String[] array = str.split(":");  //{"홍길동","62"}
 				System.out.println( rowNumber+"."+array[0] );
 			}
-			
 		} catch (Exception e) {
 			System.out.println("경로를 다시 확인 해주세요.");
 		}
 	}
 	public static void studentList2() {
-		
+		try {
+			FileReader file = new FileReader(filePath);
+			BufferedReader buffer = new BufferedReader(file);
+			
+			int rowNumber = 0;
+			while(true) { // 무한루프
+				String str = buffer.readLine(); // 한줄
+				if(str == null) break;
+				rowNumber++;
+				String[] array = str.split(":");  //{"홍길동","62"}
+				System.out.println
+					(rowNumber+"."+array[0] + "("+array[1]+")");
+			}
+		} catch (Exception e) {
+			System.out.println("경로를 다시 확인 해주세요.");
+		}
 	}
 }
 
