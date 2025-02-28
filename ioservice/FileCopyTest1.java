@@ -20,6 +20,7 @@ public class FileCopyTest1 {
 			if(str == null) break;
 			fw.write(str+"\n");
 		}
+
 		fw.close();
 		buffer.close();
 		file.close();

@@ -15,7 +15,7 @@ public class DirList {
 		// String[] ss = {"asa",111};
 		// 물리적인 파일 또는 폴더를 배열 형식으로 묶음
 		File[] names = dir.listFiles();
-		
+
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		for( int i=0; i<names.length; i++ ) {
 			String str = "[파일]";
