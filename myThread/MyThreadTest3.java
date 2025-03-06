@@ -1,11 +1,14 @@
 package myThread;
 
+/**
+ *  멀티 스레드 - 동시실행
+ */
 public class MyThreadTest3 extends Thread {
 	public void run() {
 		for(int i=1; i<=5; i++) {
 			System.out.println("호떡 " + i + "개");
 			try {
-				Thread.sleep(300);
+				Thread.sleep(300); 
 			} catch (Exception e) { }
 		}
 	}
